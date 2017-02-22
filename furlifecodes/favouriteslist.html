@@ -1,0 +1,83 @@
+<!--
+* Author: Aileen Piagola
+* Project Title: FurLife App
+* Ref: http://demos.jquerymobile.com/1.4.0/
+-->
+<!DOCTYPE html>
+<head>
+  <title>FurLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+<div data-role="header">
+    <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+    <h1>Favourites List</h1>
+    <a href="file:///C:/DIT_DSA/Major%20Project/furlifecodes/search.html" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext"></a>
+  </div><!--/header-->
+
+<div data-role="page" id="demo-page" data-title="Inbox" data-url="demo-page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>Favourites List</h1>
+        <a href="#demo-intro" data-rel="back" data-icon="carat-l" data-iconpos="notext">Back</a>
+        <a href="#" onclick="window.location.reload()" data-icon="back" data-iconpos="notext">Refresh</a>
+    </div><!-- /header -->
+    <div role="main" class="ui-content">
+        <ul id="list" class="touch" data-role="listview" data-icon="false" data-split-icon="delete">
+
+            <li>
+                <a href="#demo-mail">
+                    <img src="img/cat/cat1.jpg"/>
+                    <h3>Moon</h3>                   
+                    <p>British Fold</p>                   
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a href="#demo-mail">
+                    <img src="img/cat/cat2.jpg"/>
+                    <h3>Queen</h3>                 
+                    <p>Persian, 1.5 years old</p>                
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a href="#demo-mail">
+                    <img src="img/cat/cat3.jpg"/>
+                    <h3>Slinky</h3>                   
+                    <p>American shorthair, 2 years old</p>                 
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+
+            <li>
+                <a href="#demo-mail">
+                    <img src="img/cat/cat4.jpg"/>
+                    <h3>Fifi</h3>                 
+                    <p>Oriental, 4 years old</p>                   
+                </a>
+                <a href="#" class="delete">Delete</a>
+            </li>
+        </ul>
+    </div><!-- /content -->
+    <div id="confirm" class="ui-content" data-role="popup" data-theme="a">
+        <p id="question">Are you sure you want to delete:</p>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+        </div>
+    </div><!-- /popup -->
+</div>
+
+</body>
+</html>

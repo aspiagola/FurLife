@@ -1,0 +1,56 @@
+<!--
+* Author: Aileen Piagola
+* Project Title: FurLife App
+* Ref: http://demos.jquerymobile.com/1.4.0/
+-->
+<!DOCTYPE html>
+<head>
+  <title>FurLife</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+<div data-role="page">
+<div data-role="panel" id="mypanel">
+    <ul>
+      <li><a href="file:///C:/DIT_DSA/Major%20Project/furlifecodes/search.html">Search</a></li>
+      <li><a href="file:///C:/DIT_DSA/Major%20Project/furlifecodes/favouriteslist.html">Favourites List</a></li>
+      <li>Messages</li>
+      <li>Invite Friends</li>
+      <li>Vet Locator</li>
+      <li>Pet Care</li>
+      <li>Donate</li>
+      <li>Profile Settings</li>
+    </ul>  
+  </div><!--/end of panel-->
+
+  <div data-role="header">
+    <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext"></a>
+    <h1>Search Results</h1>
+    <a href="file:///C:/DIT_DSA/Major%20Project/furlifecodes/search.html" class="ui-btn ui-shadow ui-corner-all ui-icon-search ui-btn-icon-notext"></a>
+  </div><!--/header-->
+
+  <a href="#popupcat2" data-rel="popup" data-position-to="window" data-transition="slide"><img class="popphoto" src="img/cat/cat2.jpg" alt="cat2" style="width:100%"></a>
+  <div data-role="popup" id="popupcat2" data-overlay-theme="b" data-theme="b" data-corners="false">
+  <img class="popphoto" src="img/cat/cat2.jpg" style="max-height:512px;" alt="cat2">
+  
+   <h3>Moon,11 months old, Male, British Fold</h3>
+  <p>Moon has a very affectionate trait.<br>
+   He's great with kids and other pets.</p>
+
+  <div class="ui-nodisc-icon ui-alt-icon">
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext ui-btn-inline">Unlike</a>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-refresh ui-btn-icon-notext ui-btn-inline">Refresh</a>
+    <a href="file:///C:/DIT_DSA/Major%20Project/furlifecodes/search4.html" data-transition="slide" class="ui-btn ui-shadow ui-corner-all ui-icon-heart ui-btn-icon-notext ui-btn-inline">Like</a>
+  </div><!--end of icon div-->
+
+  </div><!--end of popup div-->
+
+</div><!--/page-->
+</body>
+</html>
